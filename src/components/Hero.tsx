@@ -63,14 +63,18 @@ const Hero = () => {
 
         <div className="animate-fade-up animate-delay-400 flex justify-center space-x-6">
           <a 
-            href="#" 
+            href="https://github.com/techynix" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-smooth p-2 hover:scale-110"
             aria-label="GitHub Profile"
           >
             <Github className="h-6 w-6" />
           </a>
           <a 
-            href="#" 
+            href="https://www.linkedin.com/in/nicole-mogoah-a35aa4331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-smooth p-2 hover:scale-110"
             aria-label="LinkedIn Profile"
           >
