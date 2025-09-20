@@ -45,18 +45,18 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">Get In Touch</h4>
             <div className="space-y-2">
               <a 
-                href="mailto:nicole@example.com"
+                href="mailto:hernyanchama@gmail.com"
                 className="block text-muted-foreground hover:text-primary transition-smooth"
               >
-                nicole@example.com
+                hernyanchama@gmail.com
               </a>
               <a 
-                href="tel:+15551234567"
+                href="tel:+254794845323"
                 className="block text-muted-foreground hover:text-primary transition-smooth"
               >
-                +1 (555) 123-4567
+                +254 (794) 845-323
               </a>
-              <p className="text-muted-foreground">San Francisco, CA</p>
+              <p className="text-muted-foreground">Kenya, Nairobi</p>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ const Footer = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
-              href="mailto:nicole@example.com" 
+              href="mailto:hernyanchama@gmail.com" 
               className="text-muted-foreground hover:text-primary transition-smooth p-2 hover:scale-110"
               aria-label="Email Contact"
             >
