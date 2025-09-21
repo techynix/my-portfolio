@@ -1,23 +1,21 @@
-import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import YaraNavigation from "@/components/YaraNavigation";
+import YaraHero from "@/components/YaraHero";
+import CycleCalendar from "@/components/CycleCalendar";
+import HealthInsights from "@/components/HealthInsights";
+import YaraFooter from "@/components/YaraFooter";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Navigation />
+      <YaraNavigation />
       <main>
         <section id="home">
-          <Hero />
+          <YaraHero />
         </section>
-        <Projects />
-        <Skills />
-        <Contact />
+        <CycleCalendar />
+        <HealthInsights />
       </main>
-      <Footer />
+      <YaraFooter />
     </div>
   );
 };

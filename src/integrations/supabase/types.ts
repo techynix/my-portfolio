@@ -14,7 +14,174 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      cycles: {
+        Row: {
+          created_at: string
+          cycle_length: number | null
+          end_date: string | null
+          id: string
+          is_predicted: boolean | null
+          period_length: number | null
+          start_date: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          cycle_length?: number | null
+          end_date?: string | null
+          id?: string
+          is_predicted?: boolean | null
+          period_length?: number | null
+          start_date: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          cycle_length?: number | null
+          end_date?: string | null
+          id?: string
+          is_predicted?: boolean | null
+          period_length?: number | null
+          start_date?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      predictions: {
+        Row: {
+          confidence_score: number | null
+          created_at: string
+          id: string
+          prediction_date: string
+          prediction_type: string
+          user_id: string
+        }
+        Insert: {
+          confidence_score?: number | null
+          created_at?: string
+          id?: string
+          prediction_date: string
+          prediction_type: string
+          user_id: string
+        }
+        Update: {
+          confidence_score?: number | null
+          created_at?: string
+          id?: string
+          prediction_date?: string
+          prediction_type?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          date_of_birth: string | null
+          display_name: string | null
+          id: string
+          notifications_enabled: boolean | null
+          onboarding_completed: boolean | null
+          timezone: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          date_of_birth?: string | null
+          display_name?: string | null
+          id?: string
+          notifications_enabled?: boolean | null
+          onboarding_completed?: boolean | null
+          timezone?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          date_of_birth?: string | null
+          display_name?: string | null
+          id?: string
+          notifications_enabled?: boolean | null
+          onboarding_completed?: boolean | null
+          timezone?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      reminders: {
+        Row: {
+          created_at: string
+          description: string | null
+          id: string
+          is_completed: boolean | null
+          reminder_date: string
+          reminder_type: string
+          title: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          id?: string
+          is_completed?: boolean | null
+          reminder_date: string
+          reminder_type: string
+          title: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          id?: string
+          is_completed?: boolean | null
+          reminder_date?: string
+          reminder_type?: string
+          title?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      symptoms: {
+        Row: {
+          created_at: string
+          date: string
+          id: string
+          notes: string | null
+          severity: number | null
+          symptom_type: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          date: string
+          id?: string
+          notes?: string | null
+          severity?: number | null
+          symptom_type: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          date?: string
+          id?: string
+          notes?: string | null
+          severity?: number | null
+          symptom_type?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

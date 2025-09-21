@@ -2,72 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Portfolio Design System - Modern & Professional */
+/* Yara - Sophisticated Feminine Health Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Luxurious feminine palette - light mode */
+    --background: 340 30% 98%;
+    --foreground: 340 20% 15%;
     
-    /* Portfolio-specific colors */
-    --primary: 237 94% 61%;
-    --primary-glow: 266 76% 68%;
-    --primary-foreground: 0 0% 100%;
+    /* Primary - Deep rose gold */
+    --primary: 315 70% 55%;
+    --primary-glow: 320 75% 65%;
+    --primary-foreground: 340 30% 98%;
     
-    --secondary: 240 5% 96%;
-    --secondary-foreground: 240 6% 10%;
+    /* Secondary - Soft amethyst */
+    --secondary: 280 25% 88%;
+    --secondary-foreground: 340 20% 25%;
     
-    --accent: 237 94% 61%;
-    --accent-foreground: 0 0% 100%;
+    /* Accent - Champagne gold */
+    --accent: 45 85% 65%;
+    --accent-foreground: 340 20% 15%;
     
-    --muted: 240 5% 96%;
-    --muted-foreground: 240 4% 46%;
+    /* Neutral tones */
+    --muted: 340 15% 92%;
+    --muted-foreground: 340 10% 45%;
     
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 340 20% 96%;
+    --card-foreground: 340 20% 15%;
     
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 237 94% 61%;
-    --radius: 0.75rem;
+    --border: 340 15% 88%;
+    --input: 340 15% 90%;
+    --ring: 315 70% 55%;
+    --radius: 1rem;
     
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 340 30% 98%;
     
-    /* Portfolio gradients */
+    /* Luxurious gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.1), hsl(var(--primary-glow) / 0.05));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(240 5% 98%));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(280, 30%, 85%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(50, 100%, 80%));
+    --gradient-hero: linear-gradient(135deg, hsl(340, 30%, 98%) 0%, hsl(315, 25%, 95%) 50%, hsl(280, 20%, 92%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(340, 20%, 96%) 0%, hsl(335, 25%, 94%) 100%);
     
-    /* Shadows */
-    --shadow-elegant: 0 10px 40px -10px hsl(var(--primary) / 0.2);
-    --shadow-card: 0 4px 20px hsl(240 5% 85% / 0.3);
-    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.3);
+    /* Elegant shadows with rose gold glow */
+    --shadow-elegant: 0 15px 35px -5px hsl(var(--primary) / 0.2);
+    --shadow-card: 0 8px 25px hsl(var(--primary) / 0.1);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.25);
     
-    /* Animations */
+    /* Smooth luxury transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-luxury: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --primary: 237 94% 61%;
-    --primary-glow: 266 76% 68%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 237 94% 61%;
-    --accent-foreground: 0 0% 100%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 237 94% 61%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    /* Dark mode - sophisticated night palette */
+    --background: 340 15% 6%;
+    --foreground: 340 5% 95%;
+    --primary: 315 85% 65%;
+    --primary-glow: 320 90% 75%;
+    --primary-foreground: 340 5% 95%;
+    --secondary: 280 40% 25%;
+    --secondary-foreground: 340 5% 95%;
+    --muted: 340 15% 15%;
+    --muted-foreground: 340 10% 70%;
+    --accent: 45 95% 75%;
+    --accent-foreground: 340 15% 15%;
+    --card: 340 12% 8%;
+    --card-foreground: 340 5% 95%;
+    --border: 340 20% 18%;
+    --input: 340 20% 12%;
+    --ring: 315 85% 65%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 340 5% 95%;
+    
+    /* Dark gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(340, 15%, 6%) 0%, hsl(315, 20%, 12%) 50%, hsl(280, 25%, 18%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(340, 12%, 8%) 0%, hsl(335, 15%, 12%) 100%);
+    --shadow-elegant: 0 20px 40px -10px hsl(var(--primary) / 0.25);
+    --shadow-glow: 0 0 60px hsl(var(--primary-glow) / 0.3);
   }
 }
 
@@ -87,7 +101,7 @@
 }
 
 @layer components {
-  /* Portfolio component styles */
+  /* Yara health component styles */
   .hero-gradient {
     background: var(--gradient-hero);
   }
@@ -116,6 +130,31 @@
     transition: var(--transition-bounce);
   }
   
+  .transition-luxury {
+    transition: var(--transition-luxury);
+  }
+  
+  /* Health app specific styles */
+  .cycle-day {
+    @apply relative w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium cursor-pointer transition-smooth;
+  }
+  
+  .cycle-day.today {
+    @apply ring-2 ring-primary;
+  }
+  
+  .cycle-day.period {
+    @apply bg-primary text-primary-foreground;
+  }
+  
+  .cycle-day.fertile {
+    @apply bg-secondary text-secondary-foreground;
+  }
+  
+  .cycle-day.ovulation {
+    @apply bg-accent text-accent-foreground;
+  }
+  
   /* Animations */
   .animate-fade-up {
     opacity: 0;
@@ -132,6 +171,10 @@
     opacity: 0;
     transform: translateX(-20px);
     animation: slideIn 0.6s ease-out forwards;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
   }
 }
 
@@ -152,6 +195,15 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  to {
+    box-shadow: 0 0 40px hsl(var(--primary-glow) / 0.5);
   }
 }
 
